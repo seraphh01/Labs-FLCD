@@ -1,0 +1,10 @@
+VAR a: INTEGER;
+VAR b: INTEGER;
+VAR c: INTEGER;
+VAR d: CHAR = 'u';
+BEGIN
+READ(a);
+READ(b);
+c := a + b;
+IF c > 0 DO WRITE(c) ELSE WRITE(d);
+END.
