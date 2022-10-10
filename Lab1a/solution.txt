@@ -19,7 +19,7 @@ VAR x: INTEGER;
 READ(x);
 VAR i: INTEGER = 2;
 VAR prime: INTEGER = 1;
-while i*i <= x && prime == 1 DO
+WHILE i*i <= x && prime == 1 DO
 BEGIN
 	IF x%i == 0) THEN prime = 0;
 	i = i+1;
@@ -33,8 +33,8 @@ VAR n: INTEGER;
 VAR a: INTEGER;
 READ(n);
 VAR sum: INTEGER = 0;
-var i: INTEGER = 1;
-while i <= n DO
+VAR i: INTEGER = 1;
+WHILE i <= n DO
 BEGIN
     READ(a);
 	sum = sum + a;
@@ -49,7 +49,7 @@ VAR 10x: INTEGER;//identifier name is not valid
 READ(x);
 VAR i: INTEGER = 2;
 VAR prime: INTEGER = 1;
-while i*i <= x && prime == 1 DO
+WHILE i*i <= x && prime == 1 DO
 BEGIN
 	IF x%i == 0) THEN prime = 0;
 	i = i+1;
