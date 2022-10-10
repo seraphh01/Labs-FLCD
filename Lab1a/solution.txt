@@ -1,0 +1,58 @@
+P1: compute the maximum of 3 numbers
+
+VAR a: INTEGER;
+VAR b: INTEGER;
+VAR c: INTEGER;
+
+READ(a);
+READ(B);
+READ(C)
+VAR d : INTEGER = a;
+IF b > d THEN d = b;
+IF c > d THEN d = c;
+
+WRITE(d);
+
+P2: verify if a number is prime
+
+VAR x: INTEGER;
+READ(x);
+VAR i: INTEGER = 2;
+VAR prime: INTEGER = 1;
+while i*i <= x && prime == 1 DO
+BEGIN
+	IF x%i == 0) THEN prime = 0;
+	i = i+1;
+END
+IF prime == 1 DO WRITE("Yes, it is prime!")
+ ELSE WRITE("No, it is not prime.");
+
+P3: the sum of n numbers
+
+VAR n: INTEGER;
+VAR a: INTEGER;
+READ(n);
+VAR sum: INTEGER = 0;
+var i: INTEGER = 1;
+while i <= n DO
+BEGIN
+    READ(a);
+	sum = sum + a;
+	i = i+1;
+END
+WRITE(sum);
+
+
+p1err: verify if a number is prime
+
+VAR 10x: INTEGER;//identifier name is not valid
+READ(x);
+VAR i: INTEGER = 2;
+VAR prime: INTEGER = 1;
+while i*i <= x && prime == 1 DO
+BEGIN
+	IF x%i == 0) THEN prime = 0;
+	i = i+1;
+END
+IF prime == 1 DO WRITE("Yes, it is prime!")
+ ELSE WRITE("No, it is not prime.);//missing end quotation mark
