@@ -19,6 +19,7 @@ newline
 '
 ,
 ARRAY
+PAIR
 CHAR
 INTEGER
 REAL
