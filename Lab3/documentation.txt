@@ -1,0 +1,92 @@
+class HashTable:
+
+    def add(self, element: any):
+        """
+        Add an element to the HashTable. Each element can be added only once in the hashtable
+        :param element: object to be added
+        :return: a tuple containing the position of the element in the bucket and then in the list
+        """
+
+    def find_by_pair(self, pos_in_bucket: int, pos_in_list: int):
+        """
+        Find an element in the hashTable by position in bucket and in list. If the index is not valid
+        exceptions are raised
+        :param pos_in_bucket: position in bucket
+        :param pos_in_list: position in list
+        :return: the found object
+        """
+
+    def get(self, element: any):
+        """
+        Look for an object in the hashTable.
+        :param element: object to lookup
+        :return: a tuple containing the position of the element in the bucket and then in the list
+        """
+
+class SymbolTable:
+
+    def add_identifier(self, name: str):
+        """
+        Add an identifier to the symbol Table
+        :param name: name of the identifier
+        :return: the position where the identifier has been added
+        """
+
+    def add_int_constant(self, constant: int):
+        """
+        Add an int constant to the symbol Table
+        :param constant: value of the constant
+        :return: the position where the constant has been added
+        """
+
+    def add_string_constant(self, string: str):
+        """
+        Add a string constant to the symbol Table
+        :param string: value of the string constant
+        :return: the position where the string has been added
+        """
+
+    def find_identifier(self, name: str):
+        """
+        Lookup an identifier
+        :param name: name of the identifier
+        :return: the positions where the identifier is found
+        """
+
+    def find_int_constant(self, constant: int):
+        """
+        Lookup an int constant
+        :param constant: name of the constant
+        :return: the positions where the constant is found
+        """
+
+    def find_string_constant(self, string: str):
+        """
+        Lookup a string constant
+        :param string: name of the constant
+        :return: the positions where the constant is found
+        """
+
+    def get_identifier(self, pos_in_bucket: int, pos_in_list: int):
+        """
+        Get an identifier by position in bucket and in list
+        :param pos_in_bucket: position in bucket
+        :param pos_in_list: position in list
+        :return: the name of the found identifier
+        """
+
+    def get_int_constant(self, pos_in_bucket: int, pos_in_list: int):
+        """
+        Get an int constant by position in bucket and in list
+        :param pos_in_bucket: position in bucket
+        :param pos_in_list: position in list
+        :return: the value of the int constant
+        """
+
+    def get_string_constant(self, pos_in_bucket: int, pos_in_list: int):
+        """
+        Get a string constant by position in bucket and in list
+        :param pos_in_bucket: position in bucket
+        :param pos_in_list: position in list
+        :return: the value of the string constant
+        """
