@@ -12,12 +12,13 @@ Lexic:
 
         - operators + - * / := < <= = >= ==
 
-        - separators [ ] { }  : ; space newline " ' ,
+        - separators [ ] { } ( ) : \s " ' , \t \n
 
         - reserved words:
 
-            ARRAY CHAR INTEGER REAL BEGIN END READ WRITE CONST IF ELSE OF THEN
-            WHILE DO PAIR
+            array char int real read write const if else of then
+            while do pair
+
 `
       b.identifiers
 

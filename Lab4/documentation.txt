@@ -1,0 +1,44 @@
+class Scanner:
+
+    def is_reserved_keyword_operator_separator(self, token: str):
+        """
+        Check if token is a reserved keyword, an operator, or a separator
+        :param token: string
+        :return: True if it is, False otherwise
+        """
+
+    def is_identifier(self, token: str):
+        """
+        Check if the token is an identifier
+        :param token: string
+        :return: True if it is, False otherwise
+        """
+
+    def is_int_constant(self, token: str):
+        """
+        Check if the token is an int constant
+        :param token: string
+        :return: True if it is, False otherwise
+        """
+
+    def is_string_constant(self, token: str):
+        """
+        Check if the token is a string constant
+        :param token: string
+        :return: True if it is, False otherwise
+        """
+
+    def gen_PIF(self, token: str, index: int):
+        """
+        Add index of token to the program internal form
+        :param token: string
+        :param index: index of token in the symbol table
+        :return: nothing
+        """
+
+    def scan(self):
+        """
+        Scan the program and generate PIF and feed Symbol Table with each token
+        :raise Exception: if an invalid token is found
+        :return:
+        """

@@ -50,3 +50,5 @@ class HashTable:
                 return pos_in_bucket, pos_in_list
         return None
 
+    def __str__(self):
+        return "\n".join([(i, b).__str__() for i, b in enumerate(self.__bucket) if len(b) > 0])

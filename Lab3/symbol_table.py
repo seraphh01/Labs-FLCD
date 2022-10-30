@@ -3,9 +3,9 @@ from Lab3.hashtable import HashTable
 
 class SymbolTable:
     def __init__(self, size: int = 100):
-        self.__identifier_hash_table = HashTable(size)
-        self.__int_constants_hash_table = HashTable(size)
-        self.__string_constants_hash_table = HashTable(size)
+        self.identifier_hash_table = HashTable(size)
+        self.int_constants_hash_table = HashTable(size)
+        self.string_constants_hash_table = HashTable(size)
 
     def add_identifier(self, name: str):
         """
@@ -13,7 +13,7 @@ class SymbolTable:
         :param name: name of the identifier
         :return: the position where the identifier has been added
         """
-        pos = self.__identifier_hash_table.add(name)
+        pos = self.identifier_hash_table.add(name)
         return pos
 
     def add_int_constant(self, constant: int):
@@ -22,7 +22,7 @@ class SymbolTable:
         :param constant: value of the constant
         :return: the position where the constant has been added
         """
-        pos = self.__int_constants_hash_table.add(constant)
+        pos = self.int_constants_hash_table.add(constant)
         return pos
 
     def add_string_constant(self, string: str):
@@ -31,7 +31,7 @@ class SymbolTable:
         :param string: value of the string constant
         :return: the position where the string has been added
         """
-        pos = self.__string_constants_hash_table.add(string)
+        pos = self.string_constants_hash_table.add(string)
         return pos
 
     def find_identifier(self, name: str):
@@ -40,7 +40,7 @@ class SymbolTable:
         :param name: name of the identifier
         :return: the positions where the identifier is found
         """
-        return self.__identifier_hash_table.get(name)
+        return self.identifier_hash_table.get(name)
 
     def find_int_constant(self, constant: int):
         """
@@ -48,7 +48,7 @@ class SymbolTable:
         :param constant: name of the constant
         :return: the positions where the constant is found
         """
-        return self.__int_constants_hash_table.get(constant)
+        return self.int_constants_hash_table.get(constant)
 
     def find_string_constant(self, string: str):
         """
@@ -56,7 +56,7 @@ class SymbolTable:
         :param string: name of the constant
         :return: the positions where the constant is found
         """
-        return self.__string_constants_hash_table.get(string)
+        return self.string_constants_hash_table.get(string)
 
     def get_identifier(self, pos_in_bucket: int, pos_in_list: int):
         """
@@ -65,7 +65,7 @@ class SymbolTable:
         :param pos_in_list: position in list
         :return: the name of the found identifier
         """
-        return self.__identifier_hash_table.find_by_pair(pos_in_bucket, pos_in_list)
+        return self.identifier_hash_table.find_by_pair(pos_in_bucket, pos_in_list)
 
     def get_int_constant(self, pos_in_bucket: int, pos_in_list: int):
         """
@@ -74,7 +74,7 @@ class SymbolTable:
         :param pos_in_list: position in list
         :return: the value of the int constant
         """
-        return self.__int_constants_hash_table.find_by_pair(pos_in_bucket, pos_in_list)
+        return self.int_constants_hash_table.find_by_pair(pos_in_bucket, pos_in_list)
 
     def get_string_constant(self, pos_in_bucket: int, pos_in_list: int):
         """
@@ -84,4 +84,4 @@ class SymbolTable:
         :return: the value of the string constant
         """
 
-        return self.__string_constants_hash_table.find_by_pair(pos_in_bucket, pos_in_list)
+        return self.string_constants_hash_table.find_by_pair(pos_in_bucket, pos_in_list)
