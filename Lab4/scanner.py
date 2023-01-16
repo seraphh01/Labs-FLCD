@@ -80,7 +80,7 @@ class Scanner:
                 self.line_index += 1
 
             if self.is_reserved_keyword_operator_separator(current_token):
-                self.gen_PIF(current_token, 0)
+                self.gen_PIF(current_token, -1)
             elif self.is_int_constant(current_token):
                 index = self.symbol_table.add_int_constant(int(current_token))
                 self.gen_PIF(current_token, index)
